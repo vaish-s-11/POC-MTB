@@ -1,0 +1,16 @@
+<mat-toolbar color="black" class="mat-elevation-z8" style="background-color: rgb(5, 6, 6); border: 2px solid white;">
+  <span style="color: aliceblue;">MOVIE TIME</span>
+
+  <div class="spacer"></div>
+
+  <a mat-button routerLink="home" style="color: aliceblue;">HOME</a>
+  <a mat-button routerLink="movies" style="color: aliceblue;">MOVIES</a>
+  <a mat-button routerLink="review" style="color: aliceblue;">REVIEW</a>
+  <a mat-button routerLink="contact" style="color: aliceblue;">CONTACT US</a>
+
+  <!-- Display login or logout button based on login status -->
+  <button *ngIf="isLoggedIn; else loginButton" mat-raised-button (click)="logoutUser()" color="warn">Logout</button>
+  <ng-template #loginButton>
+    <a mat-raised-button routerLink="login" color="accent">logout</a>
+  </ng-template>
+</mat-toolbar>

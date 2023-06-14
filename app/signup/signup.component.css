@@ -1,0 +1,81 @@
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .txt_field {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  
+  .txt_field input {
+    border: none;
+    border-bottom: 2px solid #adadad;
+    width: 300px;
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+    background-color: transparent;
+  }
+  
+  .txt_field label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #666;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .txt_field span::before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #3399ff;
+    transform: scaleX(0);
+    transition: 0.5s;
+  }
+  
+  .txt_field input:focus ~ span::before,
+  .txt_field input:valid ~ span::before {
+    transform: scaleX(1);
+  }
+  
+  button {
+    border: none;
+    outline: none;
+    padding: 12px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #3399ff;
+    color: #fff;
+    border-radius: 25px;
+    transition: 0.5s;
+  }
+  
+  button:hover {
+    background-color: #2288ff;
+  }
+  .signup-container {
+    /* background-image: url(''); */
+    background-size: cover;
+    background-position: center;
+    
+  }
+  

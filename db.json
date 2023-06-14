@@ -1,0 +1,35 @@
+
+{
+  "seating": [
+    { "id": 1, "row": "A", "seatNumber": 1, "occupied": false },
+    { "id": 2, "row": "A", "seatNumber": 2, "occupied": false },
+    { "id": 3, "row": "A", "seatNumber": 3, "occupied": true }
+  ],
+
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "loginusers": [
+    {
+      "userEmail": "movie@gmail.com",
+      "userPassword": "pass"
+    },
+    {
+      "userEmail": "theatre@gmail.com",
+      "userPassword": "thea"
+    },
+    {
+      "userEmail": "ticket@gmail.com",
+      "userPassword": "tick"
+    },
+    {
+      "userEmail": "booking@gmail.com",
+      "userPassword": "book"
+    }
+  ]}
+
+  
